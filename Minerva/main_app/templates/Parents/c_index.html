@@ -1,6 +1,48 @@
 {% extends "base.html"%}
 {% start block%}
-<!--An index showing a givien chosen studnet's assignments
-    It should load course name, course number and assignmnt 
-    namme, due date and when it is due--->
+<main class="container">
+    <!--     {% block content%} -->
+    <!--Student NavBar--->
+
+    <table class="table table-striped">
+      <h1>{student}'s Classes'</h1>
+      <thead>
+        <th scope="col">Course Name</th>
+        <th scope="col">Course Number</th>
+        <th scope="col"> Credits</th>
+        <th scope="col"> Time</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Student Name</td>
+          <td>Assignments</td>
+          <td>My Student's Courses</td>
+          <td>Time</td>
+          <td>Teacher Name</td>
+        </tr>
+        <tr>
+          <td>Student Name</td>
+          <td>Assignments</td>
+          <td>My Student's Courses</td>
+          <td>Time</td>
+          <td>Teacher Name</td>
+        </tr>
+        <tr>
+          <td>Student Name</td>
+          <td>Assignments</td>
+          <td>My Student's Courses</td>
+          <td>Time</td>
+          <td>Teacher Name</td>
+        </tr>
+        <tr>
+          <td>Student Name</td>
+          <td>Assignments</td>
+          <td>My Student's Courses</td>
+          <td>Time</td>
+          <td>Teacher Name</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--     {% endblock %} -->
+  </main>
 {% endblock%}

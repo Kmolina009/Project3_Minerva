@@ -1,1 +1,40 @@
-<!--index of student's courses-->
+{% extends 'base.html'%}
+{% block content%}
+<main class="container-fluid">
+
+    
+    <table class="table table-striped">
+      <thead>
+        <th rowspan="4" class="text-center display-4">My Course</th>
+      </thead>
+      <tbody>
+        <tr>
+          <!--         {model input -->
+          <td>Subject</td>
+          <!-- assignment.subject-->
+          <td>Course#</td>
+          <!--Assignment.classroom--->
+          <td>xxcredits</td>
+          <td>Time</td>
+          <!--assignment.due_date-->
+          <td><a herf="#">Teacher Name</a> </td>
+          <td><input type="checkbox" method="DELETE"></td>
+        </tr>
+         <tr>
+          <!--         {model input -->
+          <td>Subject</td>
+          <!-- assignment.subject-->
+          <td>Course#</td>
+          <!--Assignment.classroom--->
+          <td>xxcredits</td>
+          <td>Time</td>
+          <!--assignment.due_date-->
+          <td><a herf="#">Teacher Name</a> </td>
+          <td><input type="checkbox" method="DELETE"></td>
+        </tr>
+     
+      </tbody>
+    </table>
+
+        </main>
+{% endblock%}
