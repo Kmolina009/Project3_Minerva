@@ -1,10 +1,38 @@
 {% extends "base.html"%}
 {% block content%}
-<!--The data that will load here will be 
- a chosen student's course's(also a list)
-each table trow will have a course name, credits(may or 
-may not be needed, class start and end time and teacher name
- -->
-
- <h1>this is the parents s_index.html</h1>
+<main class="container">
+    <!--     {% block content%} -->
+        <!--Student NavBar--->
+        
+        <table class="table table-striped">
+          <thead>
+            <th scope="col">My Students</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Student Name</td>
+               <td><a href="#">Assignments</a></td>
+              <td><a href="#">My Student's Courses</a></td>
+            </tr>
+             <tr>
+              <td>Student Name</td>
+               <td><a href="#">Assignments</a></td>
+               <td><a href="#">My Student's Courses</a></td>
+            </tr>
+            <tr>
+              <td>Student Name</td>
+               <td><a href="#">Assignments</a></td>
+               <td><a href="#">My Student's Courses</a></td>
+            </tr>
+            <tr>
+              <td>Student Name</td>
+               <td><a href="#">Assignments</a></td>
+               <td><a href="#">My Student's Courses</a></td>
+            </tr>
+          </tbody>
+        </table>
+    <!--     {% endblock %} -->
+      </main>
 {% endblock%}

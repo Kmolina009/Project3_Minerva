@@ -1,8 +1,57 @@
-<!--index of completed assignments-->
-{% extends "base.html"%}
-{% block content%}
-
-<h1>This is the student comp_index.</h1>
-<!--Have page buttons brought to the right-->
-<!--use a container to hold student assignments-->
-{% endblock%}
+    {extends 'base.html'}
+    {% block content%}
+<main class="container">
+        <!--Student NavBar--->
+        
+        <table class="table table-striped">
+          <thead>
+            <th scope="col">Course Name</th>
+            <th scope="col">Course Number</th>
+             <th scope="col">Course.subject</th>
+            <th scope="col">Due Date</th>
+          </thead>
+          <tbody>
+            <tr>
+              <!--{model input -->
+              <td>Assignment name</td>
+              <!-- assignment.subject-->
+              <td>Course#</td>
+              <!--Assignment.classroom--->
+              <td>Course.subject</td>
+              <td>Due Date</td>
+              <!--assignment.due_date, there to say when it was due-->
+            </tr>
+          <tr>
+              <!--{model input -->
+              <td>Assignment name</td>
+              <!-- assignment.subject-->
+              <td>Course#</td>
+              <!--Assignment.classroom--->
+              <td>Course.subject</td>
+              <td>Due Date</td>
+              <!--assignment.due_date-->
+            </tr>
+          <tr>
+              <!--{model input -->
+              <td>Assignment name</td>
+              <!-- assignment.subject-->
+              <td>Course#</td>
+              <!--Assignment.classroom--->
+              <td>Course.subject</td>
+              <td>Due Date</td>
+              <!--assignment.due_date-->
+            </tr>
+       <tr>
+              <!--{model input -->
+              <td>Assignment name</td>
+              <!-- assignment.subject-->
+              <td>Course#</td>
+              <!--Assignment.classroom--->
+              <td>Course.subject</td>
+              <td>Due Date</td>
+              <!--assignment.due_date-->
+            </tr>
+          </tbody>
+        </table>
+    <!--     {% endblock %} -->
+      </main>
