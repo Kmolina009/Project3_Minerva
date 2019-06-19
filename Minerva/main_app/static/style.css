@@ -163,7 +163,7 @@ max-width: 150%;
 }
 .btn{
  display:block;
-  width: 10%;
+  width: auto;
   height: 5vh;
   margin:10px 0px 0px 0px;
 }

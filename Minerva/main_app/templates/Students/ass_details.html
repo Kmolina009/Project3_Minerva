@@ -1,7 +1,20 @@
 {% extends "base.html"%}
 {% block content%}
-
-<h1>This is the student ass_details.</h1>
-<!--Have page buttons brought to the right-->
-<!--use a container to hold student assignments-->
+<main class="fluid-container">
+    <div>
+      <p>{ClassName}  {CourseNumber} {Assignment.title} {Assignment.due.date}</p> 
+      <hr>
+      <textarea readonly autofocus rows="4" cols="20">
+        {teacher's assignment, would be redirected from Teacher assignment}
+      </textarea>
+     <hr>
+      <h3 style="padding-top:20px">Submissions below</h3>
+     <textarea  rows="4" cols="20">
+        {teacher's assignment, would be redirected from }
+      </textarea> <br>
+      <button>Submit</button>
+     <hr>
+    </div>
+     
+  </main>
 {% endblock%}
