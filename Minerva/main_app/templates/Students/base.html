@@ -13,20 +13,20 @@
 <body>
     <header>
         <nav class="navbar navbar-light" style="background-color: #ffe680">
-            <h1 id="Minerva-Logo" class="navbar-brand" href="{ 'url' ass_index}" >Minerva</h1>
+            <h1 id="Minerva-Logo" class="navbar-brand" href="{% url 'student_ass_index' %}" >Minerva</h1>
             <p>Welcome {{  user.first_name }}<p>
             <li class="nav-item">
-                <a href="{ 'url' ass_index }" class="nav-link m-2 menu-item nav-active">My Courses</a>
+                <a href="{% url 'student_ass_index' %}" class="nav-link m-2 menu-item nav-active">My Courses</a>
             </li>
             <li class="nav-item">
-                <a href="{'url' Completed}" class="nav-link m-2 menu-item">Submitted </ br>Assignments</a>
+                <a href="{% url 'student_comp_index'%}" class="nav-link m-2 menu-item">Submitted </ br>Assignments</a>
             </li>
             <li class="nav-item">
-                <a href="{'url' logout}" >Logout</a>
+                <a href="{% url 'logout'%}" >Logout</a>
             </li>
-      <a href="{ url 'login'}">Login</a>
+      <a href="{% url 'login'%}">Login</a>
       <a href="">About</a>
-      {%endif%}
+      
         </nav>
 
         </header>
