@@ -1,8 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Select your type:</h2>
-<a href="{% url 'student_signup' %}" class="btn btn-lg" role="button">I'm a student</a>
-<a href="{% url 'teacher_signup' %}" class="btn btn-lg" role="button">I'm a teacher</a>
-<a href="{% url 'parent_signup' %}" class="btn btn-lg" role="button">I'm a parent</a>
+<div class="fluid-container">
+    <h2>Select your type:</h2>
+      <div class="btn group">
+      <a href="{% url 'student_signup' %}" class="btn btn-primary btn-lg" role="button">I'm a student</a>
+      <a href="{% url 'teacher_signup' %}" class="btn btn-primary t btn-lg" role="button">I'm a teacher</a>
+      <a href="{% url 'parent_signup' %}" class="btn btn-primary btn-lg " role="button">I'm a parent</a>
+    </div>
+    </div>
+      
 {% endblock %}

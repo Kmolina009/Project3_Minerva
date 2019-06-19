@@ -1,5 +1,33 @@
-{% load staticfile%}
-    <!--Student NavBar--->
-{% block content %}
+{% load static %}
 
-{% endblock%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans&display=swap" rel="stylesheet">
+    <title>Minerva</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light" style="background-color: #ffe680">
+            <h1 id="Minerva-Logo" class="navbar-brand" href="{ 'url' ass_index}" >Minerva</h1>
+            <p>Welcome {{  user.first_name }}<p>
+            <li class="nav-item">
+                <a href="{ 'url' ass_index }" class="nav-link m-2 menu-item nav-active">My Courses</a>
+            </li>
+            <li class="nav-item">
+                <a href="{'url' Completed}" class="nav-link m-2 menu-item">Submitted </ br>Assignments</a>
+            </li>
+            <li class="nav-item">
+                <a href="{'url' logout}" >Logout</a>
+            </li>
+      <a href="{ url 'login'}">Login</a>
+      <a href="">About</a>
+      {%endif%}
+        </nav>
+
+        </header>
+    <main>
