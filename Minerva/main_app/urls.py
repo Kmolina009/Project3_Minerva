@@ -3,6 +3,8 @@ from .views import teacher, student, parent, main
 
 urlpatterns = [
     path('', main.home, name='home'),
+    path('login/', main.login_view, name='login'),
+    path('logout/', main.logout_view, name="logout"),
 
     path('Students/home/', student.login, name='student_login'),
     path('Students/ass_index/', student.ass_index, name='student_ass_index'),

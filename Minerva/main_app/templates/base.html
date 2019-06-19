@@ -1,4 +1,4 @@
-{% load static %}
+<!-- {% load static %} -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,13 +14,13 @@
     <header>
         <nav class="navbar navbar-light" style="background-color: #ffe680">
             <h1 id="Minerva-Logo" class="navbar-brand" href="{ url 'ass_assign' teacher.id}" >Minerva</h1>
-            {%if user.is_authenticated%}
+            {% if user.is_authenticated %}
             <p>Welcome {{  user.first_name }}<p>
-                <a href="{'url' logout}" >Logout</a>
+                <a href="{% url 'logout' %}" >Logout</a>
             {% else %}
-      <a href="{ url 'login'}">Login</a>
+      <a href="{% url 'login' %}">Login</a>
       <a href="">About</a>
-      {%endif%}
+            {% endif %}
         </nav>
 
         </header>

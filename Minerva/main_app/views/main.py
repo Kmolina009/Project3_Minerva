@@ -1,6 +1,8 @@
 from django.shortcuts import redirect, render
 from django.views.generic import TemplateView
-
+from django.contrib.auth import logout, login, authenticate
+from django.contrib.auth.forms import UserCreationForm
+from ..forms import LoginForm
 
 class SignUpView(TemplateView):
     template_name = 'Registration/signup.html'
@@ -48,7 +50,7 @@ def login_view(request):
                 error_message = 'Sorry, your username or password was invalid'
     form = LoginForm()
     context = {'form': form, 'error_message': error_message}
-    return render(request, 'login.html', context)
+    return render(request, 'Registration/login_view.html', context)
 
 
 def logout_view(request):
