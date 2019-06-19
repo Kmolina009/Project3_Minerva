@@ -1,7 +1,19 @@
-<!--Teacher assigns homework page-->
-{% extends "base.html"%}
-
-{% block content %}
-<h1>this is teacher ass.assign.html</h1>
-
-{% endblock%}
+{% extends 'base.html'%}
+{% block content%}
+<main class="fluid-container">
+  <div>
+    <p>{ClassName}  {CourseNumber}</p> 
+    <hr>
+ <form id="assign-form" method="post">
+   <input class="form-control"type="text" placeholder="Assignment Name">
+    <input class="form-control"type="date" placeholder="Due daye">
+    <textarea readonly autofocus rows="4" cols="20">
+      {teacher's assignment, would be redirected from Teacher assignment}
+    </textarea>
+    <button>Submit</button>
+   <hr>
+   </form>
+  </div>
+   
+</main>
+{% endblock %}

@@ -1,4 +1,49 @@
 {% extends "base.html"%}
 {% block content %}
-<h1>this is the parent S_details.html</h1>
+<main class="container">
+    <!--     {% block content%} -->
+        <!--Student NavBar--->
+       
+        <table class="table table-striped">
+           <h2 class="d-flex" >{student_id}'s Assignments</h2>
+          <thead>
+            <th scope="col">Students</th>
+            <th scope="col">Course Number</th>
+            <th scope="col">Assignment Name</th>
+            <th scope="col"> Due Date</th>
+            <th scope="col">Status</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Course Name</td>
+              <td>Course Number</td>
+              <td>Assignment Name</td>
+              <td>Due Date</td>
+              <td>submitted/not submitted</td>
+            </tr>
+            <tr>
+              <td>Course Name</td>
+              <td>Course Number</td>
+              <td>Assignment Name</td>
+              <td>Due Date</td>
+              <td>submitted/not submitted</td>
+            </tr>
+            <tr>
+              <td>Course Name</td>
+              <td>Course Number</td>
+              <td>Assignment Name</td>
+              <td>Due Date</td>
+              <td>submitted/not submitted</td>
+            </tr>
+            <tr>
+              <td>Course Name</td>
+              <td>Course Number</td>
+              <td>Assignment Name</td>
+              <td>Due Date</td>
+              <td>submitted/not submitted</td>
+            </tr>
+          </tbody>
+        </table>
+    <!--     {% endblock %} -->
+      </main>
 {% endblock %}
