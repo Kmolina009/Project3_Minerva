@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="navbar navbar-light" style="background-color: #ffe680">
-            <h1 id="Minerva-Logo" class="navbar-brand" href="home/" >Minerva</h1>
+            <h1 id="Minerva-Logo" class="navbar-brand" href="{ url 'ass_assign' teacher.id}" >Minerva</h1>
             {%if user.is_authenticated%}
             <p>Welcome {{  user.first_name }}<p>
                 <a href="{'url' logout}" >Logout</a>
@@ -38,5 +38,3 @@
         </footer>
 </body>
 </html>
-
-<!--figure out how to use bootstrap to move buttons in the right place,(right) per user(prototype with student)-->
