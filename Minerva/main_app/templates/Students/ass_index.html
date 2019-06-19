@@ -1,20 +1,4 @@
-
-<nav class="Student-nav navbar navbar-default navbar-light" style="background-color: #ffe680">
-    <div class="navbar-expand-sm d-flex flex-grow-1 text-right">
-      <ul class="navbar-nav ml-auto flex-nowrap active">
-        <li class="nav-item">
-          <a href="#" class="nav-link m-2 menu-item nav-active">My Courses</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link m-2 menu-item">Submitted </ br>Assignments</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link m-2 menu-item">Logout</a>
-        </li>
-      </ul>
-    </div>
-</nav>
-{% includes 'base.html'%}
+{% extends 'Students/base.html'%}
 {% block content %}
 <main class="container">
 
@@ -68,3 +52,4 @@
   </tbody>
 </table>
 
+{% endblock %}

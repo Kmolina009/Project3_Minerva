@@ -1,3 +1,4 @@
+from django.forms import ModelForm, Form, CharField, PasswordInput
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.db import transaction
@@ -38,3 +39,8 @@ class ParentSignUpForm(UserCreationForm):
         user.is_parent = True
         user.save()
         return user
+
+
+class LoginForm(Form):
+    username = CharField(label="User Name", max_length=64)
+    password = CharField(widget=PasswordInput())
