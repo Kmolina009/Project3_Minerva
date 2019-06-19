@@ -3,7 +3,7 @@
 
 <div class="text-center">
     <h1>Log In</h1>
-    <form method="POST" action="{% url'login'%}">
+    <form method="POST" action="{% url 'login' %}">
         {% csrf_token%}
         {{ form.as_p }}
         <!-- Do not change the btn name, bootstrap assigns button color via name-->
